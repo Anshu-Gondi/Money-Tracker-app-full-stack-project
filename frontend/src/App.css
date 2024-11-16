@@ -1,0 +1,201 @@
+/* Reset and Box Sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  background: radial-gradient(circle at top, #1b1b32, #121212);
+  color: #e0e0e0;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+/* Centered Main Container */
+main {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 25px;
+  background: rgba(31, 31, 46, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Header Styling */
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4dd599;
+}
+
+/* Form Styling */
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input {
+  width: 100%;
+  background: rgba(42, 42, 64, 0.8);
+  color: #e0e0e0;
+  border: 2px solid rgba(58, 58, 90, 0.8);
+  padding: 14px;
+  border-radius: 15px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+form input:focus {
+  border-color: #4dd599;
+  outline: none;
+}
+
+form button {
+  width: 100%;
+  padding: 14px;
+  border: 0;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #4dd599, #2a9f85);
+  color: #121212;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+form button:hover {
+  background: linear-gradient(135deg, #2a9f85, #4dd599);
+  transform: translateY(-3px);
+}
+
+/* Transactions List Styling */
+div.transactions {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+div.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(to right, #3a3a5c, #2a2a40);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+div.transaction:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Transaction Details */
+div.transaction div.name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+div.transaction div.description {
+  font-size: 0.9rem;
+  color: #b0b0c0;
+}
+
+div.right {
+  text-align: right;
+}
+
+/* Price Styling */
+div.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4dd599;
+}
+
+div.price.red {
+  color: #e07a5f;
+}
+
+/* Datetime Styling */
+div.datetime {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+/* Edit and Delete Buttons */
+button {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #444;
+  color: #e0e0e0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #666;
+}
+
+button.edit {
+  margin-right: 10px;
+  background-color: #4dd599;
+}
+
+button.delete {
+  background-color: #e07a5f;
+}
+
+button.edit:hover {
+  background-color: #3aa57f;
+}
+
+button.delete:hover {
+  background-color: #d9534f;
+}
+
+/* Input Animation */
+form input,
+form button {
+  animation: fadeInUp 0.6s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
