@@ -1,4 +1,4 @@
-Your `Money Tracker App` project is well-structured and seems to be a robust full-stack application. Here's a quick summary of my implementation:
+`Money Tracker App` project is well-structured and seems to be a robust full-stack application. Here's a quick summary of my implementation:
 
 ---
 
